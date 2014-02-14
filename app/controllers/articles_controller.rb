@@ -14,4 +14,12 @@ class ArticlesController < ApplicationController
       format.html
     end
   end
+
+  def new
+    @article = Article.new
+
+    respond_to do |format|
+      format.html
+    end
+  end
 end
